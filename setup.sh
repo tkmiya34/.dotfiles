@@ -6,6 +6,7 @@ git submodule init
 git submodule update
 
 # create symlink
-rm ~/.zshrc
+rm ~/.zshrc ~/.gitconfig
 ln -s ~/.dotfiles/zshrc ~/.zshrc
-source ~/.zshrc
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+cp ~/.dotfiles/gitconfig.local.sample  ~/.dotfiles/.gitconfig.local

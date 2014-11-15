@@ -1,0 +1,10 @@
+[core]
+	excludesfile = ~/.dotfiles/.gitignore
+[include]
+    path = ~/.gitconfig.local
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[push]
+	default = simple
