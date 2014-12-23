@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/osx,eclipse,sublimetext,intellij,xcode,linux
+# Created by https://www.gitignore.io/api/osx,eclipse,sublimetext,intellij,xcode,linux,vagrant
 
 ### OSX ###
 .DS_Store
@@ -146,3 +146,6 @@ DerivedData
 # KDE directory preferences
 .directory
 
+
+### Vagrant ###
+.vagrant/
