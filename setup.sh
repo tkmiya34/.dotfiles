@@ -9,4 +9,5 @@ git submodule update
 rm ~/.zshrc ~/.gitconfig
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/gitignore ~/.gitignore
 cp ~/.dotfiles/gitconfig.local.sample  ~/.dotfiles/.gitconfig.local
