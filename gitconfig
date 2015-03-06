@@ -1,5 +1,5 @@
 [core]
-	excludesfile = ~/.dotfiles/.gitignore
+	excludesfile = /Users/tkmiya34/.gitignore
 [include]
     path = ~/.gitconfig.local
 [color]
@@ -8,3 +8,6 @@
 	branch = auto
 [push]
 	default = simple
+[user]
+	name = TakanobuMiyazawa
+	email = tkmiya34@gmail.com
