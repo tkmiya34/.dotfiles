@@ -1,13 +1,30 @@
 #!/bin/bash
 
-# install oh-my-zsh
-cd ~/.dotfiles
+# oh-my-zsh
 git submodule init
 git submodule update
+files=(
+  zshrc
+)
+for file in ${files[@]}
+do
+  if [ -e ~/.${file} ]; then
+    rm -rf ~/.${file}
+  fi
+  ln -s $PWD/zsh/${file} ~/.${file}
+done
 
-# create symlink
-rm ~/.zshrc ~/.gitconfig
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/gitignore ~/.gitignore
-cp ~/.dotfiles/gitconfig.local.sample  ~/.dotfiles/.gitconfig.local
+
+# git
+files=(
+  gitconfig
+  gitignore)
+for file in ${files[@]}
+do
+  if [ -e ~/.${file} ]; then
+    rm -rf ~/.${file}
+  fi
+  ln -s $PWD/git/${file} ~/.${file}
+done
+
+# atom
