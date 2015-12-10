@@ -14,4 +14,4 @@
 [alias]
 	st = status
 	co = checkout
-	mkpr = git commit --allow-empty -m "Make pull-request [ci skip]"
+	mkpr = commit --allow-empty -m \"Make pull-request [ci skip]\"
