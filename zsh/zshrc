@@ -82,3 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+
+#direnv
+eval "$(direnv hook zsh)"
