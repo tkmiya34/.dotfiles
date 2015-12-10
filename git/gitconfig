@@ -11,3 +11,7 @@
 [user]
 	name = TakanobuMiyazawa
 	email = tkmiya34@gmail.com
+[alias]
+	st = status
+	co = checkout
+	mkpr = git commit --allow-empty -m "Make pull-request [ci skip]"
