@@ -82,3 +82,9 @@ source $ZSH/oh-my-zsh.sh
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+
+# docker-machine
+eval "$(docker-machine env db)"
+
+# direnv
+eval "$(direnv hook zsh)"
