@@ -3,7 +3,11 @@
     userId: "33176a9d-cb84-a80c-b525-2221e2043f1b"
   welcome:
     showOnStartup: false
-  core: {}
+  core:
+    disabledPackages: [
+      "minimap-autohide"
+      "autohide-tree-view"
+    ]
   editor:
     invisibles: {}
     fontSize: 12
@@ -21,3 +25,5 @@
       "find-and-replace": true
   "ruby-test": {}
   "spell-check": {}
+  autosave:
+    enabled: true
