@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/tkmiya34/.gitignore
+	editor = vim
 [include]
     path = ~/.gitconfig.local
 [color]
