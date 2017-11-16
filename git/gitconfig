@@ -15,4 +15,10 @@
 [alias]
 	st = status
 	co = checkout
-	mkpr = commit --allow-empty -m \"Make pull-request [ci skip]\"
+	ec = commit --allow-empty -m \"Make pull-request [ci skip]\"
+	mkpr = !"f() { git checkout -b $1; git ec; git push -u origin $1; open $(hub pull-request -m "$1"); }; f"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
