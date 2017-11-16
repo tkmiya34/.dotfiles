@@ -13,7 +13,7 @@ if ! zgen saved; then
   zgen prezto command-not-found
   zgen prezto syntax-highlighting
   zgen prezto tmux
-  zgen prezto tmux:auto-start local 'yes'
+  # zgen prezto tmux:auto-start local 'yes'
 
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-autosuggestions
@@ -39,3 +39,6 @@ if [ -d $HOME/.anyenv ] ; then
     eval "$(anyenv init -)"
 fi
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="$PATH:/opt/yarn-[version]/bin"
