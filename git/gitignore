@@ -23,21 +23,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-### Eclipse ###
-*.pydevproject
-.metadata
-.gradle
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-
 # External tool builders
 .externalToolBuilders/
 
